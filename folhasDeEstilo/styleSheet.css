@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-}
-
 :root {
     --verde-joia: #23BE99;
     --rosa-joia: #BB23BE;
@@ -17,6 +13,7 @@ body {
     --rosa-pastel: #EABCEB;
     --fonte-cursiva: 'Parisienne', cursive;
     --fonte-roboto: 'Roboto', sans-serif;
+    --fonte-chique: 'Playfair Display', serif;
 }
 
 .cursiva {
@@ -27,8 +24,11 @@ body {
     font-family: var(--fonte-roboto);
 }
 
+.fonteChique {
+    font-family: 'Playfair Display', serif;
+}
+
 #menuBox {
-    background-color: rgba(51, 51, 51, 0.473);
     padding: 2.5vw 10vw;
     display: flex;
     flex-direction: row;
@@ -36,14 +36,16 @@ body {
     justify-content: space-between;
 }
 
+.logoMenu, .menuItens, #fraseIntrodução, #slogan {
+    color: var(--rosa-pastel)
+}
+
 .logoMenu {
     font-size: 5vw;
-    color: var(--rosa-pastel);
 }
 
 .menuItens {
     text-decoration: none;
-    color: var(--rosa-pastel);
     padding: 0 2.5vw;
     font-size: 2vw;
     text-transform: uppercase;
@@ -62,4 +64,31 @@ nav > ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+#heroRowGradient {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #000000b6, #00000086), url("..\\imagens\\Bolo Hero Row.jpg");
+    background-size: cover;
+}
+
+/*Hero Row Estilo*/
+
+#caixaTextoHeroRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fraseIntrodução, #slogan {
+    padding: 2vw 0;
+}
+
+#fraseIntrodução {
+    font-size: 7vw;
+}
+
+#slogan {
+    font-size: 4vw;
 }
