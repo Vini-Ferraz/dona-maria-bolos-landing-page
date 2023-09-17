@@ -18,6 +18,7 @@
     box-sizing: border-box;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -51,17 +52,20 @@
 }
 
 .logoMenu, .menuItens, #fraseIntrodução, #slogan, .fa-brands {
-    color: var(--rosa-pastel)
+    color: var(--rosa-pastel);
 }
 
 .logoMenu {
     font-size: 5vw;
 }
 
+.menuItens, #minhaHistóriaTexto {
+    font-size: 1.8vw;;
+}
+
 .menuItens {
     text-decoration: none;
     padding: 0 2.5vw;
-    font-size: 2vw;
     text-transform: uppercase;
 }
 
@@ -141,4 +145,36 @@ nav > ul {
 
 main > #heroRow > #menuLateralRedesSociais > ul {
     list-style: none;
+}
+
+/*Minha História Estilo*/
+
+#minha-história {
+    background-color: var(--azul-pastel);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 10vw;
+}
+
+#caixaTextoEstilo {
+    width: 40vw;
+    line-height: 2.7vw;
+}
+
+#minhaHistóriaTitulo {
+    font-size: 4.5vw;
+    padding-bottom: 3.5vw
+}
+
+#minhaHistóriaTexto {
+    text-align: justify;
+}
+
+#fotoDonaMaria {
+    width: 30vw;
+    height: 40vw;
+    border-radius: 1.5vw;
+    box-shadow: 0 0.3vw #00000060;
 }

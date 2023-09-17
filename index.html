@@ -15,10 +15,10 @@
             <div class="logoMenu cursiva"><p>DM</p></div>
             <nav>
                 <ul class="roboto menuFlex">
-                    <li><a class="menuItens" href="#">Home</a></li>
-                    <li><a class="menuItens" href="#">Sobre</a></li>
-                    <li><a class="menuItens" href="#">Galeria</a></li>
-                    <li><a class="menuItens" href="#">Contato</a></li>
+                    <li><a class="menuItens" href="#heroRow">Home</a></li>
+                    <li><a class="menuItens" href="#minha-história">Sobre</a></li>
+                    <li><a class="menuItens" href="#galeria">Galeria</a></li>
+                    <li><a class="menuItens" href="#contatos">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,15 +41,19 @@
             </section>
     </div>
 
-        <section>
-            <h2>Minha história</h2>
-            <p class="roboto">Bolos da Dona Maria é uma loja de bolos caseiros que existe há mais de 20 anos. A fundadora da loja, Dona Maria, sempre teve um dom especial para a cozinha, e seus bolos são feitos com ingredientes frescos e com todo o cuidado e carinho.
-                Aqui na Bolos da Dona Maria, você encontra uma variedade de bolos deliciosos, desde os tradicionais bolos de chocolate e de cenoura até os bolos mais criativos, como o bolo de churros ou o bolo de brigadeiro.
-                Venha nos visitar e experimente o sabor caseiro dos Bolos da Dona Maria!</p>
-            <img src="imagens\Dona Maria.jpg" alt="Uma foto de uma senhora de idade sorrindo" style="width: 300px; height: 300px;">
+        <section id="minha-história">
+            <div id="caixaTextoEstilo">
+                <h2 class="fonteChique" id="minhaHistóriaTitulo">Minha história</h2>
+                <p class="roboto" id="minhaHistóriaTexto">Bolos da Dona Maria é uma loja de bolos caseiros que existe há mais de 20 anos. A fundadora da loja, Dona Maria, sempre teve um dom especial para a cozinha, e seus bolos são feitos com ingredientes frescos e com todo o cuidado e carinho.
+                    Aqui na Bolos da Dona Maria, você encontra uma variedade de bolos deliciosos, desde os tradicionais bolos de chocolate e de cenoura até os bolos mais criativos, como o bolo de churros ou o bolo de brigadeiro.
+                    Venha nos visitar e experimente o sabor caseiro dos Bolos da Dona Maria!</p>
+            </div>
+            <figure>
+                <img src="imagens\Dona Maria.jpg" alt="Uma foto de uma senhora de idade sorrindo" title="Foto rara da Dona Maria" id="fotoDonaMaria">
+            </figure>
         </section>
 
-        <section>
+        <section id="galeria">
             <h2>Do meu forno para o seu coração</h2>
             <img src="imagens\Bolo 01.jpg" alt="bolo de chocolate" style="width: 300px; height: 300px;">
             <img src="imagens\Bolo 02.jpg" alt="bolo de dois andares decorados com frutas vermelhas" style="width: 300px; height: 300px;">
@@ -60,8 +64,7 @@
         </section>
     </main>
 
-    <footer>
-
+    <footer id="contatos">
         <div class="logo">
             <p class="cursiva">DM</p>
             <p>Bolos</p>
