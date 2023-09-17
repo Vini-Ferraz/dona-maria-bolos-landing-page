@@ -149,13 +149,16 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 /*Minha História Estilo*/
 
+#minha-história, #galeria {
+    padding: 3.5vw 10vw;
+}
+
 #minha-história {
     background-color: var(--azul-pastel);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3.5vw 10vw;
 }
 
 #caixaTextoEstilo {
@@ -163,10 +166,12 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     line-height: 2.7vw;
 }
 
-#minhaHistóriaTitulo {
-    font-size: 4.5vw;
+#minhaHistóriaTitulo, #galeriaTitulo {
+    font-size: 3vw;
     padding-bottom: 3.5vw
 }
+
+
 
 #minhaHistóriaTexto {
     text-align: justify;
@@ -176,5 +181,43 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     width: 30vw;
     height: 40vw;
     border-radius: 1.5vw;
-    box-shadow: 0 0.3vw #00000060;
+    box-shadow: 0 0.3vw #00000030;
+}
+
+/*Galeria Estilo*/
+
+#galeria {
+    background-color: var(--rosa-pastel);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#galeriaTitulo {
+    text-align: center;
+}
+
+#bolosImagemCaixa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70vw;
+    height: fit-content;
+    row-gap: 1vw;
+}
+
+.boloImagem {
+    width: 22.5vw;
+    height: 20vw;
+    border-radius: 0.8vw;
+    box-shadow: 0 0.3vw #00000030;
+}
+
+.boloImagem:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.boloImagem:not(:hover) {
+    opacity: 70%;
 }
