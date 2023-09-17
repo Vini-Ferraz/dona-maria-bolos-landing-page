@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display&family=Roboto&display=swap');
+@keyframes cor-fundo-botao {
+    0% {
+        background-color: var(--rosa-joia);
+    }
+    50% {
+        background-color: var(--verde-joia);
+    }
+    100% {
+        background-color: var(--rosa-joia);
+    }
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
 }
 
 :root {
@@ -36,7 +50,7 @@
     justify-content: space-between;
 }
 
-.logoMenu, .menuItens, #fraseIntrodução, #slogan {
+.logoMenu, .menuItens, #fraseIntrodução, #slogan, .fa-brands {
     color: var(--rosa-pastel)
 }
 
@@ -51,8 +65,9 @@
     text-transform: uppercase;
 }
 
-.menuItens:hover {
+.menuItens:hover, .fa-brands:hover {
     color: var(--azul-pastel);
+    cursor: pointer;
 }
 
 nav > ul {
@@ -67,23 +82,30 @@ nav > ul {
 }
 
 #heroRowGradient {
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 3.5vw;
     background-image: linear-gradient(to bottom, #000000b6, #00000086), url("..\\imagens\\Bolo Hero Row.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*Hero Row Estilo*/
 
-#caixaTextoHeroRow {
+#heroRow {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-#fraseIntrodução, #slogan {
-    padding: 2vw 0;
+#caixaTextoHeroRow {
+    display: flex;
+    height: 30vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15vw;
 }
+
 
 #fraseIntrodução {
     font-size: 7vw;
@@ -91,4 +113,32 @@ nav > ul {
 
 #slogan {
     font-size: 4vw;
+}
+
+#botaoHeroRow {
+    width: 30vw;
+    font-size: 3vw;
+    padding: 0.1vw;
+    color: black;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    background-color: var(--rosa-joia);
+    animation-name: cor-fundo-botao;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#botaoHeroRow:hover {
+    transform: scale(1.1);
+}
+
+.fa-brands {
+    font-size: 4vw;
+    padding: 1vw 4vw 1vw 0;
+}
+
+main > #heroRow > #menuLateralRedesSociais > ul {
+    list-style: none;
 }
