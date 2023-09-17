@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display&family=Roboto&display=swap');
 @keyframes cor-fundo-botao {
     0% {
-        background-color: var(--rosa-joia);
+        background-color: var(--rosa-pastel);
     }
     50% {
-        background-color: var(--verde-joia);
+        background-color: var(--verde-pastel);
     }
     100% {
-        background-color: var(--rosa-joia);
+        background-color: var(--rosa-pastel);
     }
 }
 
@@ -24,7 +24,7 @@
 :root {
     --verde-joia: #23BE99;
     --rosa-joia: #BB23BE;
-    --azul-pastel: #BCEBDF;
+    --verde-pastel: #BCEBDF;
     --rosa-pastel: #EABCEB;
     --fonte-cursiva: 'Parisienne', cursive;
     --fonte-roboto: 'Roboto', sans-serif;
@@ -73,7 +73,7 @@
 }
 
 .menuItens:hover, .fa-brands:hover {
-    color: var(--azul-pastel);
+    color: var(--verde-pastel);
     cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ nav > ul {
     padding: 0.1vw;
     color: black;
     border: none;
-    border-radius: 1vw;
+    border-radius: 0.5vw;
     cursor: pointer;
     background-color: var(--rosa-joia);
     animation-name: cor-fundo-botao;
@@ -152,12 +152,12 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 /*Minha História Estilo*/
 
-#minha-história, #galeria, #contatos {
+#minha-história, #galeria, #contatosFlexBox {
     padding: 3.5vw 10vw;
 }
 
 #minha-história {
-    background-color: var(--azul-pastel);
+    background-color: var(--verde-pastel);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -166,7 +166,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 #caixaTextoEstilo {
     width: 40vw;
-    line-height: 2.7vw;
+    line-height: 2.8vw;
 }
 
 #minhaHistóriaTitulo, #galeriaTitulo {
@@ -209,7 +209,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 .boloImagem {
     width: 22.5vw;
-    height: 20vw;
+    height: 18vw;
     border-radius: 0.8vw;
     box-shadow: 0 0.3vw #00000030;
 }
@@ -217,6 +217,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 .boloImagem:hover {
     transform: scale(1.2);
     z-index: 1;
+    cursor: none;
 }
 
 .boloImagem:not(:hover) {
@@ -226,7 +227,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 /*Footer Estilo*/
 
 #contatosFlexBox {
-    background-color: var(--azul-pastel);
+    background-color: var(--verde-pastel);
     display: flex;
     flex-direction: row;
     align-content: center;
