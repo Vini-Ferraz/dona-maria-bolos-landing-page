@@ -11,6 +11,20 @@
     }
 }
 
+@keyframes correr {
+    0% {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
 
 * {
     margin: 0;
@@ -411,5 +425,53 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     #caixaTextoEstilo {
         width: 75vw;
         line-height: 5vw;
+    }
+
+    /*Galeria Estilo*/
+
+    #galeria {
+        background-color: var(--rosa-pastel);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #galeriaTitulo {
+        text-align: center;
+    }
+    
+    #bolosImagemCaixa {
+        display: flex;
+        width: 75vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        height: fit-content;
+    }
+    
+    .boloImagem {
+        width: 75vw;
+        height: 75vw;
+        margin: 0 5vw;
+        border-radius: 1vw;
+        animation-name: correr;
+        animation-play-state: running;
+        animation-timing-function: linear;
+        animation-duration: 45s;
+        animation-iteration-count: infinite;
+    }
+    
+    #bolosImagemCaixa:hover .boloImagem {
+        cursor: pointer;
+        animation-play-state: paused;
+    }
+
+    .boloImagem:hover {
+        transform: scale(1);
+        cursor: pointer;
+    }
+    
+    .boloImagem:not(:hover) {
+        opacity: 100%;
     }
 }
