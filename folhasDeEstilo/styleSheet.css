@@ -51,7 +51,7 @@
     justify-content: space-between;
 }
 
-.logoMenu, .menuItens, #fraseIntrodução, #slogan, .fa-brands {
+.logoMenu, .menuItens, #fraseIntrodução, #slogan, .fa-brands, .fa-bars {
     color: var(--rosa-pastel);
 }
 
@@ -86,6 +86,10 @@ nav > ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.fa-bars, #botaoMenuHamburguer {
+    display: none;
 }
 
 #heroRowGradient {
@@ -289,4 +293,123 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 .menuItensFooter {
     color: #000000;
     font-size: 1.5vw;
+}
+
+/*Tela para dispositivos menores*/
+
+@media only screen and (max-width: 500px) {
+
+    /*Menu Estilo*/
+
+    #menuLateralRedesSociais, #minha-história > figure {
+        display: none;
+    }
+
+    #menuEstado {
+        background-color: var(--rosa-pastel);
+        position: absolute;
+        top: 15vw;
+        width: 100%;
+        display: none;
+    }
+
+    .menuItens, #minhaHistóriaTexto {
+        font-size: 3vw;
+        color: #000000;
+    }
+
+    .menuItens:hover{
+        color: var(--verde-joia)
+    }
+
+    nav > .menuFlex > li {
+        margin: 2vw;
+    }
+
+    .menuFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logoMenu {
+        font-size: 8vw;
+    }
+
+    .fa-bars {
+        display: inline;
+        font-size: 5vw;
+    }
+
+    #menuBox {
+        padding: 2.5vw 0vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #botaoMenuHamburguer {
+        background: none;
+        border: none;
+        display: inline;
+    }
+
+    /*Hero Row Estilo*/
+
+    #heroRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #heroRowGradient {
+        background-size: contain;
+    }
+
+    #caixaTextoHeroRow {
+        display: flex;
+        height: 35vw;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #fraseIntrodução {
+        font-size: 9vw;
+    }
+    
+    #slogan {
+        font-size: 5vw;
+    }
+
+    #botaoHeroRow {
+        width: 50vw;
+        font-size: 4.5vw;
+        padding: 0.1vw;
+    }
+
+    /*Minha História Estilo*/
+
+    #minhaHistóriaTitulo, #galeriaTitulo {
+        font-size: 6vw;
+        padding-bottom: 4vw;
+    }
+
+    #minha-história {
+        background-color: var(--verde-pastel);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #minhaHistóriaTexto {
+        text-align: center;
+    }
+
+    #caixaTextoEstilo {
+        width: 75vw;
+        line-height: 5vw;
+    }
 }

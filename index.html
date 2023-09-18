@@ -13,7 +13,8 @@
     <div id="heroRowGradient">
         <header id="menuBox">
             <div class="logoMenu cursiva"><p>DM</p></div>
-            <nav>
+            <button id="botaoMenuHamburguer" onclick="menuBotao()"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menuEstado">
                 <ul class="roboto menuFlex">
                     <li><a class="menuItens" href="#menuBox">Home</a></li>
                     <li><a class="menuItens" href="#minha-história">Sobre</a></li>
@@ -93,5 +94,16 @@
         </div>
         
     </footer>
+
+    <script>
+        function menuBotao() {
+            let estado = document.getElementById('menuEstado').style.display;
+            if (estado == "block") {
+                document.getElementById('menuEstado').style.display = "none";
+            }else {
+                document.getElementById('menuEstado').style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
