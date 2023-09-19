@@ -376,18 +376,20 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
     #heroRowGradient {
         background-size: cover;
+        height: 100vh;
     }
 
     #caixaTextoHeroRow {
-        height: 35vw;
+        height: 100vh;
         padding: 0;
+        padding-bottom: 7vw;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
 
     #fraseIntrodução {
-        font-size: 12vw;
+        font-size: 9vw;
     }
     
     #slogan {
@@ -456,7 +458,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
         animation-iteration-count: infinite;
     }
     
-    #bolosImagemCaixa:hover .boloImagem {
+    #bolosImagemCaixa:active .boloImagem {
         cursor: pointer;
         animation-play-state: paused;
     }
