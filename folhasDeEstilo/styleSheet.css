@@ -57,9 +57,13 @@
     font-family: 'Playfair Display', serif;
 }
 
+#menuBox, .menuFlex, #heroRow, #caixaTextoHeroRow, #minha-história, #galeria, #contatosFlexBox,
+#logoFooterFlexBox, #contatos, #menuFooter, #contatosFlexBox > #contatos > ul {
+    display: flex;
+}
+
 #menuBox {
     padding: 2.5vw 10vw;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +100,6 @@ nav > ul {
 }
 
 .menuFlex {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -117,13 +120,11 @@ nav > ul {
 /*Hero Row Estilo*/
 
 #heroRow {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #caixaTextoHeroRow {
-    display: flex;
     height: 30vw;
     flex-direction: column;
     align-items: center;
@@ -176,7 +177,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 #minha-história {
     background-color: var(--verde-pastel);
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -207,7 +207,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 #galeria {
     background-color: var(--rosa-pastel);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -246,14 +245,12 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 #contatosFlexBox {
     background-color: var(--verde-pastel);
-    display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-around;
 }
 
 #logoFooterFlexBox, #contatos, #menuFooter {
-    display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -278,7 +275,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
 #contatosFlexBox > #contatos > ul {
     list-style: none;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -340,8 +336,11 @@ main > #heroRow > #menuLateralRedesSociais > ul {
         margin: 2vw;
     }
 
-    .menuFlex {
+    .menuFlex, #menuBox, #heroRow, #caixaTextoHeroRow, #minha-história, #galeria, #bolosImagemCaixa  {
         display: flex;
+    }
+
+    .menuFlex {
         flex-direction: column;
     }
     
@@ -356,7 +355,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
     #menuBox {
         padding: 2.5vw 0vw;
-        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
@@ -371,7 +369,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     /*Hero Row Estilo*/
 
     #heroRow {
-        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -381,7 +378,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     }
 
     #caixaTextoHeroRow {
-        display: flex;
         height: 35vw;
         padding: 0;
         flex-direction: column;
@@ -412,7 +408,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
     #minha-história {
         background-color: var(--verde-pastel);
-        display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -431,7 +426,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
 
     #galeria {
         background-color: var(--rosa-pastel);
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -442,7 +436,6 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     }
     
     #bolosImagemCaixa {
-        display: flex;
         width: 75vw;
         border-radius: 0.5vw;
         overflow: hidden;
@@ -473,5 +466,30 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     
     .boloImagem:not(:hover) {
         opacity: 100%;
+    }
+
+    /*Footer Estilo*/
+
+    #logoFooterCursiva {
+        font-size: 6vw;
+    }
+    
+    #logoFooterFonteChique {
+        font-size: 5vw;
+        margin-top: -1vw;
+    }
+    
+    #telefone, #email {
+        font-size: 2.8vw;
+    }
+
+    #contatosFlexBox > #contatos > ul > li > .fa-brands {
+        padding: 2vw;
+        font-size: 4.5vw;
+    }
+
+    .menuItensFooter {
+        font-size: 2.5vw;
+        padding: 1vw 0;
     }
 }
