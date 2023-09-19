@@ -371,10 +371,11 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     #heroRow {
         align-items: center;
         justify-content: center;
+        padding: 5vw 0;
     }
 
     #heroRowGradient {
-        background-size: contain;
+        background-size: cover;
     }
 
     #caixaTextoHeroRow {
@@ -391,6 +392,7 @@ main > #heroRow > #menuLateralRedesSociais > ul {
     
     #slogan {
         font-size: 5vw;
+        padding-bottom: 3vw;
     }
 
     #botaoHeroRow {
